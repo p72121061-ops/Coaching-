@@ -2,126 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Service Unavailable — Vrindavan Tutorials</title>
+<title>Error 404</title>
 <style>
-  *{margin:0;padding:0;box-sizing:border-box;}
   body{
-    min-height:100vh;display:flex;align-items:center;justify-content:center;
-    background:#0a0a0f;
-    font-family:'Segoe UI',system-ui,sans-serif;
-    color:#e2e8f0;overflow:hidden;
+    margin:0;
+    height:100vh;
+    background:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:Arial, sans-serif;
   }
-  /* subtle grid */
-  body::before{
-    content:'';position:fixed;inset:0;
-    background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);
-    background-size:40px 40px;z-index:0;
+  h1{
+    color:#000;
+    font-size:3rem;
   }
-  .wrap{position:relative;z-index:1;text-align:center;max-width:520px;padding:40px 24px;}
-
-  /* status badge */
-  .badge{
-    display:inline-flex;align-items:center;gap:8px;
-    background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);
-    color:#f87171;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
-    padding:6px 14px;border-radius:99px;margin-bottom:28px;
-  }
-  .dot{width:7px;height:7px;border-radius:50%;background:#ef4444;animation:pulse 1.4s ease-in-out infinite;}
-  @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.85);}}
-
-  /* code */
-  .code{
-    font-size:5.5rem;font-weight:800;line-height:1;
-    background:linear-gradient(135deg,#94a3b8 0%,#475569 100%);
-    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-    margin-bottom:8px;letter-spacing:-.04em;
-  }
-
-  /* divider */
-  .divider{
-    width:48px;height:2px;margin:18px auto 22px;
-    background:linear-gradient(90deg,transparent,rgba(239,68,68,.5),transparent);
-  }
-
-  /* heading */
-  h1{font-size:1.25rem;font-weight:600;color:#cbd5e1;margin-bottom:10px;}
-
-  /* description */
-  p{font-size:.875rem;color:#64748b;line-height:1.7;margin-bottom:28px;}
-  p strong{color:#94a3b8;}
-
-  /* info box */
-  .info{
-    background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);
-    border-radius:12px;padding:18px 20px;text-align:left;margin-bottom:24px;
-  }
-  .info-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.04);}
-  .info-row:last-child{border-bottom:none;}
-  .info-label{font-size:.75rem;color:#475569;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap;padding-top:2px;}
-  .info-val{font-size:.8rem;font-weight:500;color:#94a3b8;}
-  .info-val.red{color:#f87171;}
-  .info-val.yellow{color:#fbbf24;word-break:break-word;max-width:60%;text-align:right;}
-
-  /* footer note */
-  .note{font-size:.72rem;color:#334155;line-height:1.6;}
-  .note a{color:#475569;text-decoration:underline;text-underline-offset:3px;}
-
-  /* top bar */
-  .topbar{
-    position:fixed;top:0;left:0;right:0;height:3px;
-    background:linear-gradient(90deg,#ef4444,#f97316,#ef4444);
-    background-size:200% 100%;animation:slide 2s linear infinite;
-  }
-  @keyframes slide{0%{background-position:200% 0;}100%{background-position:-200% 0;}}
 </style>
 </head>
 <body>
-<div class="topbar"></div>
-<div class="wrap">
-
-  <div class="badge">
-    <span class="dot"></span>
-    Service Interrupted
-  </div>
-
-  <div class="code">302</div>
-  <p style="font-size:.7rem;color:#475569;letter-spacing:.12em;text-transform:uppercase;margin-bottom:0;">Subscription Expired</p>
-
-  <div class="divider"></div>
-
-  <h1>This website is temporarily unavailable</h1>
-  <p>The free subscription for <strong>vrindavantutorials.vercel.app</strong> has expired and — surprisingly — has not been renewed yet. The site will remain offline until the account owner decides to acknowledge reality.</p>
-
-  <div class="info">
-    <div class="info-row">
-      <span class="info-label">Status</span>
-      <span class="info-val red">● Subscription Expired</span>
-    </div>
-    <div class="info-row">
-      <span class="info-label">Error Code</span>
-      <span class="info-val">302 — Service Unavailable</span>
-    </div>
-    <div class="info-row">
-      <span class="info-label">Affected Site</span>
-      <span class="info-val">vrindavantutorials.vercel.app</span>
-    </div>
-    <div class="info-row">
-      <span class="info-label">Resolution</span>
-      <span class="info-val yellow">Pending Owner Action (whenever that happens)</span>
-    </div>
-    <div class="info-row">
-      <span class="info-label">Owner Response Time</span>
-      <span class="info-val red">Unknown. Possibly never.</span>
-    </div>
-  </div>
-
-  <p class="note">
-    If you are the site owner — you know what to do. You've known for a while now.<br>
-    The invoice is still sitting there, patiently waiting, unlike this website.<br><br>
-    <a href="#">Renew Subscription</a> &nbsp;·&nbsp; <a href="#">Read the Invoice You Ignored</a>
-  </p>
-
-</div>
+  <h1>Error 404</h1>
 </body>
 </html>
