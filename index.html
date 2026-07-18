@@ -696,6 +696,25 @@ header{border-bottom:1px solid var(--border);padding:.55rem 1.5rem;display:flex;
   <button class="drawer-link drawer-lang-opt" id="drawerHI" onclick="setLang('hi')"><span>🇮🇳</span> हिंदी</button>
 </div>
 
+<!-- SOLIDARITY BANNER -->
+<style>
+#solidarity-banner{background:#1a1a1a;color:#fff;padding:.55rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:.75rem;font-family:'Space Grotesk',sans-serif;font-size:.75rem;line-height:1.4;position:relative;z-index:10;}
+#solidarity-banner a{color:#d97706;font-weight:700;text-decoration:none;}
+#solidarity-banner a:hover{text-decoration:underline;}
+.sb-left{display:flex;align-items:center;gap:.6rem;flex:1;}
+.sb-pulse{width:8px;height:8px;border-radius:50%;background:#ef4444;flex-shrink:0;animation:sb-blink 1.2s ease-in-out infinite;}
+@keyframes sb-blink{0%,100%{opacity:1;}50%{opacity:.2;}}
+#sb-close{background:none;border:none;color:#888;cursor:pointer;font-size:.9rem;flex-shrink:0;padding:0;line-height:1;}
+#sb-close:hover{color:#fff;}
+</style>
+<div id="solidarity-banner">
+  <div class="sb-left">
+    <span class="sb-pulse"></span>
+    <span>✊ We stand with <strong>Sonam Wangchuk</strong> — Fighting for exam accountability &amp; student justice ⚖️ <a href="https://www.aljazeera.com/news/2026/7/14/indian-activist-wangchuk-urged-to-end-hunger-strike-over-exam-paper-leaks" target="_blank" rel="noopener">Read more ↗</a></span>
+  </div>
+  <button id="sb-close" onclick="document.getElementById('solidarity-banner').style.display='none'" title="Close">✕</button>
+</div>
+
 <header>
   <div class="header-left">
     <button class="menu-btn" onclick="openDrawer()" title="Menu"><span class="menu-btn-icon">☰</span><span class="menu-btn-text">Menu</span></button>
@@ -1527,6 +1546,7 @@ const promises=[
 ];
 
 const leaks=[
+  {title:"UPESSC Assistant Professor 2026",titleHi:"यूपीईएसएससी असिस्टेंट प्रोफेसर 2026",date:"Jan 2026",detail:"UP Education Service Selection Commission exam cancelled after STF uncovered a racket supplying papers to candidates for money. Three arrested. Chairperson forced to resign. Exam held in April 2025, cancelled in Jan 2026.",detailHi:"यूपी शिक्षा सेवा चयन आयोग की परीक्षा रद्द — STF ने पैसे लेकर पेपर बेचने वाले गिरोह का भंडाफोड़ किया। तीन गिरफ्तार। चेयरपर्सन को इस्तीफा देना पड़ा।",tags:["UPESSC","UP State","2026","STF Arrest"],severity:"high"},
   {title:"NEET UG 2024 — National Scale Leak",titleHi:"नीट यूजी 2024 — राष्ट्रीय स्तर का लीक",date:"May 2024",detail:"Papers leaked in Bihar and Rajasthan on Telegram. 24 lakh students appeared. 67 scored perfect 720 — statistically near impossible. NTA chairperson resigned. CBI arrests made.",detailHi:"बिहार और राजस्थान में टेलीग्राम पर पेपर लीक हुए। 24 लाख छात्र शामिल हुए। 67 ने पूरे 720 अंक पाए — सांख्यिकीय रूप से लगभग असंभव। एनटीए चेयरमैन ने इस्तीफ़ा दिया। सीबीआई ने गिरफ्तारियां कीं।",tags:["NEET","Medical","24L Affected"],severity:"high"},
   {title:"UGC NET 2024 — Cancelled Within 24hrs",titleHi:"यूजीसी नेट 2024 — 24 घंटे में रद्द",date:"June 2024",detail:"Papers on dark web Telegram groups. Exam cancelled within 24 hours of completion. 9 lakh PhD aspirants' months of prep wasted.",detailHi:"डार्क वेब टेलीग्राम ग्रुप्स पर पेपर मिले। परीक्षा खत्म होने के 24 घंटे के अंदर रद्द कर दी गई। 9 लाख पीएचडी उम्मीदवारों की महीनों की तैयारी बर्बाद हुई।",tags:["UGC NET","PhD Aspirants","9L Affected"],severity:"high"},
   {title:"UP Police Constable 2024",titleHi:"यूपी पुलिस कांस्टेबल 2024",date:"Feb 2024",detail:"Papers went online within hours. 48 lakh candidates affected — one of the largest exam cancellations in Indian history.",detailHi:"घंटों के अंदर पेपर ऑनलाइन आ गए। 48 लाख उम्मीदवार प्रभावित हुए — भारतीय इतिहास के सबसे बड़े परीक्षा रद्दीकरणों में से एक।",tags:["UP Police","48L Affected","Record Scale"],severity:"high"},
